@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsaMade - 翌朝までに動画の字幕・章・要約を納品</title>
+    <meta name="description" content="AsaMadeは動画コンテンツを翌朝までに字幕付き、チャプター分割、要約付きで納品。5分単位の従量制で小さく始められます。">
+    <meta property="og:title" content="AsaMade - 翌朝までに字幕+章+要約">
+    <meta property="og:description" content="動画コンテンツを翌朝までに字幕付き、チャプター分割、要約付きで納品">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://asamade.jp">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        *:focus-visible {
+            outline: 2px solid #667eea;
+            outline-offset: 2px;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "AsaMade",
+        "description": "動画コンテンツを翌朝までに字幕付き、チャプター分割、要約付きで納品するサービス",
+        "brand": {
+            "@type": "Brand",
+            "name": "AsaMade"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "JPY",
+            "lowPrice": "1000",
+            "highPrice": "10000"
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-purple-600 text-white px-4 py-2 rounded">メインコンテンツへスキップ</a>
+    
+    <!-- ヒーロー -->
+    <header class="hero-gradient text-white">
+        <nav class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">AsaMade</h1>
+                <a href="#pricing" class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition" aria-label="料金を見る">見積・依頼する</a>
+            </div>
+        </nav>
+        <div class="container mx-auto px-4 py-20 md:py-32 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 animate-fadeInUp">翌朝までに<br>字幕+章+要約</h2>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto">動画コンテンツの編集作業を一晩で完了。朝起きたら、すぐに公開できる状態でお届けします。</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#pricing" class="bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition">料金を見る</a>
+                <a href="#how-it-works" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-purple-700 transition">使い方を見る</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- 提供物 -->
+        <section class="container mx-auto px-4 py-20" aria-labelledby="features-heading">
+            <h2 id="features-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">AsaMadeが提供する価値</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">📝</div>
+                    <h3 class="text-xl font-bold mb-3">読みやすい字幕生成</h3>
+                    <p class="text-gray-600 leading-relaxed">AIが音声を認識し、タイミング完璧な字幕を自動生成。人が最終チェックして読みやすく調整します。</p>
+                </article>
+                <article class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold mb-3">内容に沿ったチャプター分割</h3>
+                    <p class="text-gray-600 leading-relaxed">内容の切り替わりを判断して、視聴者が見やすいチャプターに分割。目次も自動生成します。</p>
+                </article>
+                <article class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold mb-3">ポイントを押さえた要約</h3>
+                    <p class="text-gray-600 leading-relaxed">動画の要点を的確にまとめた要約を生成。SNS投稿用の短文版も同時作成します。</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 品質へのこだわり -->
+        <section class="bg-purple-50 py-20" aria-labelledby="quality-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="quality-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">読みやすさに、ちゃんと配慮しています</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4">
+                        <span class="text-2xl">📱</span>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">スマホでも読みやすい行の長さと自然な改行</h3>
+                            <p class="text-gray-600">画面サイズに合わせて、読みやすい文字数で改行します。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4">
+                        <span class="text-2xl">⏱️</span>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">短すぎず長すぎない表示時間</h3>
+                            <p class="text-gray-600">視聴者が無理なく読めるタイミングで字幕を表示します。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4">
+                        <span class="text-2xl">✍️</span>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">言い切りの形で、すっと頭に入る文章</h3>
+                            <p class="text-gray-600">不要な言葉を削ぎ落とし、理解しやすい文章に整えます。</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4">
+                        <span class="text-2xl">📖</span>
+                        <div>
+                            <h3 class="font-bold text-lg mb-2">内容の切り替わりで章分け</h3>
+                            <p class="text-gray-600">沈黙だけでなく、話の内容を理解して適切に章を分けます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI×人のハイブリッド -->
+        <section class="container mx-auto px-4 py-20" aria-labelledby="hybrid-heading">
+            <h2 id="hybrid-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">仕上げは、人 × AI のハイブリッド</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+                <p class="text-lg leading-relaxed mb-6">
+                    下処理はAIでスピーディに。<strong>改行・見やすさ調整・言い回しの最終確認は人が担当</strong>します。
+                </p>
+                <p class="text-lg leading-relaxed">
+                    数字や固有名詞も<strong>人が責任を持ってチェック</strong>してからお渡しします。AIまかせにせず、読みやすさを重視して整えます。
+                </p>
+            </div>
+        </section>
+
+        <!-- Before→After -->
+        <section class="bg-gray-100 py-20" aria-labelledby="before-after-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="before-after-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">導入前後の変化</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-red-600 mb-4">😰 Before</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="mr-2">❌</span><span>字幕作成に3〜5時間</span></li>
+                            <li class="flex items-start"><span class="mr-2">❌</span><span>チャプター分けは手作業</span></li>
+                            <li class="flex items-start"><span class="mr-2">❌</span><span>要約作成でさらに1時間</span></li>
+                            <li class="flex items-start"><span class="mr-2">❌</span><span>深夜まで編集作業</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-green-600 mb-4">🎉 After</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="mr-2">✅</span><span>寝ている間に全て完了</span></li>
+                            <li class="flex items-start"><span class="mr-2">✅</span><span>朝起きたら納品済み</span></li>
+                            <li class="flex items-start"><span class="mr-2">✅</span><span>編集時間を大幅削減</span></li>
+                            <li class="flex items-start"><span class="mr-2">✅</span><span>コンテンツ制作に集中</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 価格 -->
+        <section id="pricing" class="bg-purple-50 py-20" aria-labelledby="pricing-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="pricing-heading" class="text-3xl md:text-4xl font-bold text-center mb-4 gradient-text">料金（従量制）</h2>
+                <p class="text-center text-lg mb-12 text-gray-600">動画の長さに応じた<strong>従量制</strong>です。<strong>5分単位</strong>で計算します。<br>まずは1本からお気軽にご依頼ください。</p>
+                
+                <div class="max-w-4xl mx-auto">
+                    <!-- メインプラン -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
+                        <div class="hero-gradient text-white p-6">
+                            <h3 class="text-2xl font-bold mb-2">字幕＋章＋要約（標準プラン）</h3>
+                            <p class="text-3xl font-bold">200円<span class="text-lg font-normal">/分</span></p>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 mb-4">料金例（5分単位で計算）</p>
+                            <div class="grid md:grid-cols-3 gap-4 mb-6">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">3分の動画</p>
+                                    <p class="text-xl font-bold">1,000円</p>
+                                    <p class="text-xs text-gray-500">5分換算</p>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">7分の動画</p>
+                                    <p class="text-xl font-bold">2,000円</p>
+                                    <p class="text-xs text-gray-500">10分換算</p>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-600">18分の動画</p>
+                                    <p class="text-xl font-bold">4,000円</p>
+                                    <p class="text-xs text-gray-500">20分換算</p>
+                                </div>
+                            </div>
+                            <button class="w-full hero-gradient text-white py-3 rounded-lg font-semibold hover:opacity-90 transition">このプランで依頼する</button>
+                        </div>
+                    </div>
+
+                    <!-- オプション -->
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="font-bold text-lg mb-4">オプション</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center pb-3 border-b">
+                                <span>多言語字幕（英語・中国語など）</span>
+                                <span class="font-semibold text-purple-700">+80円/分/言語</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-3 border-b">
+                                <span>特急納品（48時間以内）</span>
+                                <span class="font-semibold text-purple-700">+30%</span>
+                            </div>
+                            <div class="flex justify-between items-center pb-3 border-b">
+                                <span>特急納品（24時間以内）</span>
+                                <span class="font-semibold text-purple-700">+50%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span>ショート動画編集</span>
+                                <span class="font-semibold text-purple-700">+3,500円/本</span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">※ 長尺・複数本はまとめてお見積りします</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="#" class="inline-block hero-gradient text-white px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition">見積・依頼する</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 納期 -->
+        <section class="container mx-auto px-4 py-20" aria-labelledby="delivery-heading">
+            <h2 id="delivery-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">納期の目安</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg text-center">
+                <p class="text-lg leading-relaxed">
+                    <strong>通常は"翌朝まで"</strong>の納品を目指しています<br>
+                    （長さや混雑により前後します）
+                </p>
+                <p class="text-gray-600 mt-4">お急ぎの際はご相談ください</p>
+            </div>
+        </section>
+
+        <!-- 導入3ステップ -->
+        <section id="how-it-works" class="bg-gray-100 py-20" aria-labelledby="steps-heading">
+            <h2 id="steps-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">かんたん3ステップ</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold text-purple-700">1</div>
+                        <h3 class="text-xl font-bold mb-3">動画をアップロード</h3>
+                        <p class="text-gray-600">動画ファイルをドラッグ&ドロップでアップロード</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold text-purple-700">2</div>
+                        <h3 class="text-xl font-bold mb-3">おやすみなさい</h3>
+                        <p class="text-gray-600">AI×人のハイブリッドで夜通し作業します</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold text-purple-700">3</div>
+                        <h3 class="text-xl font-bold mb-3">翌朝に完成</h3>
+                        <p class="text-gray-600">起きたら完成ファイルをダウンロード</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="bg-purple-50 py-20" aria-labelledby="faq-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="faq-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">よくある質問</h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <details class="bg-white rounded-lg shadow-md">
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">無料トライアルはありますか？</summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            現在は行っていません。5分単位の従量制で小さく始めていただけます。
+                        </div>
+                    </details>
+                    <details class="bg-white rounded-lg shadow-md">
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">どこまで自動ですか？</summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            下処理はAIで行い、最終チェックは人が担当します。読みやすさ重視で整えます。
+                        </div>
+                    </details>
+                    <details class="bg-white rounded-lg shadow-md">
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">価格は本当にそれだけ？</summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            はい。5分単位で計算します。多言語・特急などはオプションでご案内します。
+                        </div>
+                    </details>
+                    <details class="bg-white rounded-lg shadow-md">
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">対応している動画形式は？</summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            MP4、MOV、AVI、WMV、FLVなど主要な動画形式に対応しています。最大ファイルサイズは5GBまでです。
+                        </div>
+                    </details>
+                    <details class="bg-white rounded-lg shadow-md">
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">字幕の編集は可能ですか？</summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            はい、納品後に専用エディタで字幕の修正が可能です。タイミング調整も簡単に行えます。
+                        </div>
+                    </details>
+                    <details class="bg-white rounded-lg shadow-md">
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">セキュリティは大丈夫ですか？</summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            全ての通信は暗号化され、データは処理後に適切に削除されます。お客様のコンテンツを安全に保護します。
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="hero-gradient text-white py-20" aria-labelledby="cta-heading">
+            <div class="container mx-auto px-4 text-center">
+                <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold mb-6">今夜から始めませんか？</h2>
+                <p class="text-xl mb-2 opacity-90 max-w-2xl mx-auto">5分単位の従量制で、まずは1本から。小さく始められます。</p>
+                <p class="text-base mb-8 opacity-80">編集ワークフローに<strong>そのまま載せられるSRT</strong>でお届け。<strong>動画は触りません</strong>。</p>
+                <a href="#" class="inline-block bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition">見積・依頼する</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">AsaMade</h3>
+                    <p class="text-sm">翌朝までに字幕+章+要約</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3">サービス</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">料金プラン</a></li>
+                        <li><a href="#" class="hover:text-white transition">機能一覧</a></li>
+                        <li><a href="#" class="hover:text-white transition">導入事例</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3">サポート</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">ヘルプセンター</a></li>
+                        <li><a href="#" class="hover:text-white transition">お問い合わせ</a></li>
+                        <li><a href="#" class="hover:text-white transition">API仕様書</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-3">会社情報</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">会社概要</a></li>
+                        <li><a href="#" class="hover:text-white transition">利用規約</a></li>
+                        <li><a href="#" class="hover:text-white transition">プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 AsaMade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
