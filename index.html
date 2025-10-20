@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AsaMade - 翌朝までに動画の字幕・章・要約を納品</title>
-    <meta name="description" content="AsaMadeは動画コンテンツを翌朝までに字幕付き、チャプター分割、要約付きで納品。5分単位の従量制で小さく始められます。">
-    <meta property="og:title" content="AsaMade - 翌朝までに字幕+章+要約">
-    <meta property="og:description" content="動画コンテンツを翌朝までに字幕付き、チャプター分割、要約付きで納品">
+    <title>AsaMade - 動画の字幕（SRT）・章・要約を納品</title>
+    <meta name="description" content="AsaMadeは動画の字幕ファイル（SRT）、チャプター、要約を納品。AI速報版20円/分、標準プラン200円/分。動画編集・焼き込みは非対応。">
+    <meta property="og:title" content="AsaMade - 字幕（SRT）+章+要約">
+    <meta property="og:description" content="動画の字幕ファイル（SRT）、チャプター、要約を納品。動画編集・焼き込みは非対応。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://asamade.jp">
     <meta name="twitter:card" content="summary_large_image">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -36,7 +35,7 @@
         "@context": "https://schema.org/",
         "@type": "Product",
         "name": "AsaMade",
-        "description": "動画コンテンツを翌朝までに字幕付き、チャプター分割、要約付きで納品するサービス",
+        "description": "動画の字幕ファイル（SRT）、チャプター、要約を納品するサービス。AI速報版と標準プランから選択可能。",
         "brand": {
             "@type": "Brand",
             "name": "AsaMade"
@@ -44,8 +43,8 @@
         "offers": {
             "@type": "AggregateOffer",
             "priceCurrency": "JPY",
-            "lowPrice": "1000",
-            "highPrice": "10000"
+            "lowPrice": "20",
+            "highPrice": "200"
         }
     }
     </script>
@@ -58,15 +57,15 @@
         <nav class="container mx-auto px-4 py-6">
             <div class="flex justify-between items-center">
                 <h1 class="text-2xl font-bold">AsaMade</h1>
-                <a href="#pricing" class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition" aria-label="料金を見る">見積・依頼する</a>
+                <a href="#pricing" class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition" aria-label="料金を見る">料金プラン</a>
             </div>
         </nav>
         <div class="container mx-auto px-4 py-20 md:py-32 text-center">
-            <h2 class="text-4xl md:text-6xl font-bold mb-6 animate-fadeInUp">翌朝までに<br>字幕+章+要約</h2>
-            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto">ご指定の動画に対応する字幕ファイル（SRT形式）を作成し、翌朝すぐにご利用いただける形で納品します。</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#pricing" class="bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition">料金を見る</a>
-                <a href="#how-it-works" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-purple-700 transition">使い方を見る</a>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 animate-fadeInUp">字幕（SRT）＋章＋要約を<br>翌朝までに</h2>
+            <p class="text-xl md:text-2xl mb-4 opacity-90 max-w-2xl mx-auto">動画の字幕ファイル、チャプター、要約を自動生成。</p>
+            <p class="text-lg mb-8 opacity-80 max-w-2xl mx-auto">※動画編集・焼き込みは対応外です。SRTファイルでの納品となります。</p>
+            <div class="flex justify-center">
+                <a href="https://forms.gle/qb3iWFKBgP9ftvNN6" class="bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition">今すぐ申し込む</a>
             </div>
         </div>
     </header>
@@ -78,8 +77,8 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <article class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
                     <div class="text-4xl mb-4">📝</div>
-                    <h3 class="text-xl font-bold mb-3">読みやすい字幕生成</h3>
-                    <p class="text-gray-600 leading-relaxed">AIが音声を認識し、タイミング完璧な字幕を自動生成。人が最終チェックして読みやすく調整します。</p>
+                    <h3 class="text-xl font-bold mb-3">読みやすい字幕ファイル（SRT）</h3>
+                    <p class="text-gray-600 leading-relaxed">AIが音声を認識し、タイミングを最適化した字幕を生成。標準プランは人が最終確認して読みやすく調整します。</p>
                 </article>
                 <article class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
                     <div class="text-4xl mb-4">📚</div>
@@ -97,7 +96,7 @@
         <!-- 品質へのこだわり -->
         <section class="bg-purple-50 py-20" aria-labelledby="quality-heading">
             <div class="container mx-auto px-4">
-                <h2 id="quality-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">読みやすさに、ちゃんと配慮しています</h2>
+                <h2 id="quality-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">視認性と読みやすさを重視</h2>
                 <div class="max-w-3xl mx-auto space-y-6">
                     <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4">
                         <span class="text-2xl">📱</span>
@@ -116,14 +115,14 @@
                     <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4">
                         <span class="text-2xl">✍️</span>
                         <div>
-                            <h3 class="font-bold text-lg mb-2">言い切りの形で、すっと頭に入る文章</h3>
+                            <h3 class="font-bold text-lg mb-2">言い切りで伝わる文章</h3>
                             <p class="text-gray-600">不要な言葉を削ぎ落とし、理解しやすい文章に整えます。</p>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-md flex items-start gap-4">
                         <span class="text-2xl">📖</span>
                         <div>
-                            <h3 class="font-bold text-lg mb-2">内容の切り替わりで章分け</h3>
+                            <h3 class="font-bold text-lg mb-2">内容の転換にあわせて章分け</h3>
                             <p class="text-gray-600">沈黙だけでなく、話の内容を理解して適切に章を分けます。</p>
                         </div>
                     </div>
@@ -133,13 +132,13 @@
 
         <!-- AI×人のハイブリッド -->
         <section class="container mx-auto px-4 py-20" aria-labelledby="hybrid-heading">
-            <h2 id="hybrid-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">仕上げは、人 × AI のハイブリッド</h2>
+            <h2 id="hybrid-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">スピードはAI、仕上げは人の目</h2>
             <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
                 <p class="text-lg leading-relaxed mb-6">
-                    下処理はAIでスピーディに。<strong>改行・見やすさ調整・言い回しの最終確認は人が担当</strong>します。
+                    <strong>標準プラン</strong>は、下処理をAIでスピーディに行い、改行・見やすさ調整・言い回しの最終確認を人が担当します。数字や固有名詞も人が責任を持ってチェックしてからお渡しします。
                 </p>
                 <p class="text-lg leading-relaxed">
-                    数字や固有名詞も<strong>人が責任を持ってチェック</strong>してからお渡しします。AIまかせにせず、読みやすさを重視して整えます。
+                    <strong>AI速報版</strong>は、AIによる自動出力のみ。校正は行わず、そのまま納品します。社内共有や下書きとしてご活用ください。
                 </p>
             </div>
         </section>
@@ -155,15 +154,15 @@
                             <li class="flex items-start"><span class="mr-2">❌</span><span>字幕作成に3〜5時間</span></li>
                             <li class="flex items-start"><span class="mr-2">❌</span><span>チャプター分けは手作業</span></li>
                             <li class="flex items-start"><span class="mr-2">❌</span><span>要約作成でさらに1時間</span></li>
-                            <li class="flex items-start"><span class="mr-2">❌</span><span>深夜まで編集作業</span></li>
+                            <li class="flex items-start"><span class="mr-2">❌</span><span>編集が深夜までずれ込む</span></li>
                         </ul>
                     </div>
                     <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
                         <h3 class="text-2xl font-bold text-green-600 mb-4">🎉 After</h3>
                         <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start"><span class="mr-2">✅</span><span>寝ている間に全て完了</span></li>
-                            <li class="flex items-start"><span class="mr-2">✅</span><span>朝起きたら納品済み</span></li>
-                            <li class="flex items-start"><span class="mr-2">✅</span><span>編集時間を大幅削減</span></li>
+                            <li class="flex items-start"><span class="mr-2">✅</span><span>字幕ファイル作成を自動化</span></li>
+                            <li class="flex items-start"><span class="mr-2">✅</span><span>チャプター・要約も同時納品</span></li>
+                            <li class="flex items-start"><span class="mr-2">✅</span><span>作業時間を大幅削減</span></li>
                             <li class="flex items-start"><span class="mr-2">✅</span><span>コンテンツ制作に集中</span></li>
                         </ul>
                     </div>
@@ -174,71 +173,91 @@
         <!-- 価格 -->
         <section id="pricing" class="bg-purple-50 py-20" aria-labelledby="pricing-heading">
             <div class="container mx-auto px-4">
-                <h2 id="pricing-heading" class="text-3xl md:text-4xl font-bold text-center mb-4 gradient-text">料金（従量制）</h2>
-                <p class="text-center text-lg mb-12 text-gray-600">動画の長さに応じた<strong>従量制</strong>です。<strong>5分単位</strong>で計算します。<br>まずは1本からお気軽にご依頼ください。</p>
+                <h2 id="pricing-heading" class="text-3xl md:text-4xl font-bold text-center mb-4 gradient-text">料金プラン</h2>
+                <p class="text-center text-lg mb-12 text-gray-600">用途に合わせて2つのプランから選べます。<br>まずは1本からお気軽にご依頼ください。</p>
                 
-                <div class="max-w-4xl mx-auto">
-                    <!-- メインプラン -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
-                        <div class="hero-gradient text-white p-6">
-                            <h3 class="text-2xl font-bold mb-2">字幕＋章＋要約（標準プラン）</h3>
-                            <p class="text-3xl font-bold">200円<span class="text-lg font-normal">/分</span></p>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-8">
+                    <!-- AI速報版 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-blue-500">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-2xl font-bold">AI速報版</h3>
+                                <span class="bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-bold">おすすめ</span>
+                            </div>
+                            <p class="text-3xl font-bold mb-4">20円<span class="text-lg font-normal">/分</span></p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">自動出力</span>
+                                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">校正なし</span>
+                                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">1分単位課金</span>
+                            </div>
                         </div>
                         <div class="p-6">
-                            <p class="text-gray-600 mb-4">料金例（5分単位で計算）</p>
-                            <div class="grid md:grid-cols-3 gap-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <p class="text-sm text-gray-600">3分の動画</p>
-                                    <p class="text-xl font-bold">1,000円</p>
-                                    <p class="text-xs text-gray-500">5分換算</p>
+                            <p class="text-gray-600 mb-4"><strong>用途：</strong>社内共有、議事録、下書き</p>
+                            <p class="text-gray-600 mb-4"><strong>品質：</strong>AIによる自動生成（人の確認なし）</p>
+                            <p class="text-gray-600 mb-6"><strong>納期：</strong>数時間以内（混雑時を除く）</p>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                                <p class="text-sm text-gray-600 mb-2">料金例</p>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm">10分の動画</span>
+                                    <span class="font-bold">200円</span>
                                 </div>
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <p class="text-sm text-gray-600">7分の動画</p>
-                                    <p class="text-xl font-bold">2,000円</p>
-                                    <p class="text-xs text-gray-500">10分換算</p>
-                                </div>
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <p class="text-sm text-gray-600">18分の動画</p>
-                                    <p class="text-xl font-bold">4,000円</p>
-                                    <p class="text-xs text-gray-500">20分換算</p>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">30分の動画</span>
+                                    <span class="font-bold">600円</span>
                                 </div>
                             </div>
-                            <button class="w-full hero-gradient text-white py-3 rounded-lg font-semibold hover:opacity-90 transition">このプランで依頼する</button>
+                            <a href="https://forms.gle/qb3iWFKBgP9ftvNN6" class="block w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition text-center">このプランで申し込む</a>
                         </div>
                     </div>
 
-                    <!-- オプション -->
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h3 class="font-bold text-lg mb-4">オプション</h3>
-                        <div class="space-y-3">
-                            <div class="flex justify-between items-center pb-3 border-b">
-                                <span>多言語字幕（英語・中国語など）</span>
-                                <span class="font-semibold text-purple-700">+80円/分/言語</span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span>ショート動画編集</span>
-                                <span class="font-semibold text-purple-700">+3,500円/本</span>
+                    <!-- 標準プラン -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div class="hero-gradient text-white p-6">
+                            <h3 class="text-2xl font-bold mb-2">標準プラン</h3>
+                            <p class="text-3xl font-bold mb-4">200円<span class="text-lg font-normal">/分</span></p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">人の最終確認</span>
+                                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">翌朝納品目安</span>
+                                <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">1分単位課金</span>
                             </div>
                         </div>
-                        <p class="text-sm text-gray-500 mt-4">※ 長尺・複数本はまとめてお見積りします</p>
+                        <div class="p-6">
+                            <p class="text-gray-600 mb-4"><strong>用途：</strong>社外公開、YouTube投稿、配信</p>
+                            <p class="text-gray-600 mb-4"><strong>品質：</strong>人が最終チェック・校正済み</p>
+                            <p class="text-gray-600 mb-6"><strong>納期：</strong>通常翌朝まで（混雑・長尺で前後）</p>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                                <p class="text-sm text-gray-600 mb-2">料金例</p>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm">10分の動画</span>
+                                    <span class="font-bold">2,000円</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-sm">30分の動画</span>
+                                    <span class="font-bold">6,000円</span>
+                                </div>
+                            </div>
+                            <a href="https://forms.gle/qb3iWFKBgP9ftvNN6" class="block w-full hero-gradient text-white py-3 rounded-lg font-semibold hover:opacity-90 transition text-center">このプランで申し込む</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="text-center mt-12">
-                    <a href="#" class="inline-block hero-gradient text-white px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition">見積・依頼する</a>
-                </div>
+                <p class="text-center text-sm text-gray-500">※ 長尺動画・複数本はまとめてお見積りします</p>
             </div>
         </section>
 
         <!-- 納期 -->
         <section class="container mx-auto px-4 py-20" aria-labelledby="delivery-heading">
             <h2 id="delivery-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">納期の目安</h2>
-            <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg text-center">
-                <p class="text-lg leading-relaxed">
-                    <strong>通常は"翌朝まで"</strong>の納品を目指しています<br>
-                    （長さや混雑により前後します）
-                </p>
-                <p class="text-gray-600 mt-4">お急ぎの際はご相談ください</p>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+                <div class="mb-6">
+                    <h3 class="font-bold text-lg mb-2">標準プラン</h3>
+                    <p class="text-gray-600">通常は<strong>翌朝まで</strong>を目指しています（長さや混雑により前後します）</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">AI速報版</h3>
+                    <p class="text-gray-600"><strong>数時間以内</strong>（混雑時を除く）</p>
+                </div>
+                <p class="text-gray-600 mt-6 text-center">お急ぎの際はお問い合わせください</p>
             </div>
         </section>
 
@@ -254,13 +273,13 @@
                     </div>
                     <div class="text-center">
                         <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold text-purple-700">2</div>
-                        <h3 class="text-xl font-bold mb-3">おやすみなさい</h3>
-                        <p class="text-gray-600">AI×人のハイブリッドで夜通し作業します</p>
+                        <h3 class="text-xl font-bold mb-3">おまかせください</h3>
+                        <p class="text-gray-600">AI×人のハイブリッドで処理します（プランにより異なります）</p>
                     </div>
                     <div class="text-center">
                         <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold text-purple-700">3</div>
-                        <h3 class="text-xl font-bold mb-3">翌朝に完成</h3>
-                        <p class="text-gray-600">起きたら完成ファイルをダウンロード</p>
+                        <h3 class="text-xl font-bold mb-3">SRTファイルをダウンロード</h3>
+                        <p class="text-gray-600">字幕ファイル、章、要約をダウンロードして編集ワークフローへ</p>
                     </div>
                 </div>
             </div>
@@ -272,39 +291,33 @@
                 <h2 id="faq-heading" class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">よくある質問</h2>
                 <div class="max-w-3xl mx-auto space-y-4">
                     <details class="bg-white rounded-lg shadow-md">
-                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">無料トライアルはありますか？</summary>
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">動画編集や焼き込みもしてもらえますか？</summary>
                         <div class="px-6 pb-6 text-gray-600">
-                            現在は行っていません。5分単位の従量制で小さく始めていただけます。
+                            いいえ、当サービスは字幕ファイル（SRT）、チャプター、要約の納品に特化しています。動画編集・焼き込みには対応しておりません。
                         </div>
                     </details>
                     <details class="bg-white rounded-lg shadow-md">
-                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">急ぎ対応はできますか？</summary>
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">納品されたSRTファイルは編集できますか？</summary>
                         <div class="px-6 pb-6 text-gray-600">
-                            可能な範囲で調整します。まずはご相談ください。（追加費用が発生する場合があります）
+                            はい。SRTファイルは標準的な字幕フォーマットのため、Premiere Pro、DaVinci Resolve、Aegisub等の一般的な字幕エディタでご自身で編集可能です。当サービスによる編集代行は行っておりません。
+                        </div>
+                    </details>
+                    <details class="bg-white rounded-lg shadow-md">
+                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">無料トライアルはありますか？</summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            現在は行っていません。AI速報版なら1分20円から、標準プランは1分200円で小さく始めていただけます。
                         </div>
                     </details>
                     <details class="bg-white rounded-lg shadow-md">
                         <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">どこまで自動ですか？</summary>
                         <div class="px-6 pb-6 text-gray-600">
-                            下処理はAIで行い、最終チェックは人が担当します。読みやすさ重視で整えます。
-                        </div>
-                    </details>
-                    <details class="bg-white rounded-lg shadow-md">
-                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">価格は本当にそれだけ？</summary>
-                        <div class="px-6 pb-6 text-gray-600">
-                            はい。5分単位で計算します。多言語・特急などはオプションでご案内します。
+                            AI速報版はAIによる完全自動出力です。標準プランは、下処理をAIで行い、最終チェックは人が担当します。読みやすさ重視で整えます。
                         </div>
                     </details>
                     <details class="bg-white rounded-lg shadow-md">
                         <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">対応している動画形式は？</summary>
                         <div class="px-6 pb-6 text-gray-600">
-                            MP4、MOV、AVI、WMV、FLVなど主要な動画形式に対応しています。最大ファイルサイズは2GBまでです。
-                        </div>
-                    </details>
-                    <details class="bg-white rounded-lg shadow-md">
-                        <summary class="p-6 cursor-pointer font-semibold hover:bg-gray-50">字幕の編集は可能ですか？</summary>
-                        <div class="px-6 pb-6 text-gray-600">
-                            はい、納品後に専用エディタで字幕の修正が可能です。タイミング調整も簡単に行えます。
+                            MP4、MOV、AVI、WMV、FLVなど主要な動画形式に対応しています。最大ファイルサイズは5GBまでです。
                         </div>
                     </details>
                     <details class="bg-white rounded-lg shadow-md">
@@ -321,17 +334,17 @@
         <section class="hero-gradient text-white py-20" aria-labelledby="cta-heading">
             <div class="container mx-auto px-4 text-center">
                 <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold mb-6">今夜から始めませんか？</h2>
-                <p class="text-xl mb-2 opacity-90 max-w-2xl mx-auto">5分単位の従量制で、まずは1本から。小さく始められます。</p>
-                <p class="text-base mb-8 opacity-80">編集ワークフローに<strong>そのまま載せられるSRT</strong>でお届け。<strong>動画は触りません</strong>。</p>
-                <a href="#" class="inline-block bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition">見積・依頼する</a>
+                <p class="text-xl mb-2 opacity-90 max-w-2xl mx-auto">AI速報版なら1分20円から、標準プランは1分200円。まずは1本から小さく始められます。</p>
+                <p class="text-base mb-8 opacity-80">編集ワークフローに<strong>そのまま載せられるSRT</strong>でお届け。<strong>動画には一切手を加えません</strong>。</p>
+                <a href="https://forms.gle/qb3iWFKBgP9ftvNN6" class="inline-block bg-white text-purple-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition">今すぐ申し込む</a>
             </div>
         </section>
     </main>
 
     <!-- フッター -->
     <footer class="bg-gray-900 text-gray-400 py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="container mx-auto px-3">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <h3 class="text-white font-bold text-xl mb-4">AsaMade</h3>
                     <p class="text-sm">翌朝までに字幕+章+要約</p>
@@ -339,27 +352,20 @@
                 <div>
                     <h4 class="text-white font-semibold mb-3">サービス</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">料金プラン</a></li>
-                        <li><a href="#" class="hover:text-white transition">機能一覧</a></li>
-                        <li><a href="#" class="hover:text-white transition">導入事例</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">料金プラン</a></li>
+                        <li><a href="#features-heading" class="hover:text-white transition">機能一覧</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-white font-semibold mb-3">サポート</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-3">利用規約</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">利用規約</a></li>
-                        <li><a href="#" class="hover:text-white transition">プライバシーポリシー</a></li>
+                        <li><a href="mailto:asamade.service@gmail.com?subject=サービスに関するお問い合わせ" class="hover:text-white transition">📧お問い合わせ</a></li>
+                        <li><a href="tokushoho.html" class="hover:text-white transition">特定商取引法に基づく表記</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>&copy; 2024 AsaMade. All rights reserved.</p>
+                <p>&copy; 2025 AsaMade. All rights reserved.</p>
             </div>
         </div>
     </footer>
